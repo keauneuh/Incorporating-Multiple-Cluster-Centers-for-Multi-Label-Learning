@@ -33,7 +33,7 @@ Kxx2 = Kxx'*Kxx;
 Kzx2 = Kzx'*Kzx;
 Kg2 = Kg'*Kg;
 
-A = (Kxx2+param.alpha*Kzx2+param.beta*Kg2+param.gamma*Kxx - ((Kxx'*m1+param.alpha*Kzx'*c1)/(m+param.alpha*c)*(m1'*Kxx+param.alpha*c1'*Kzx))+epsilon*I)\(Kxx'*Y+param.alpha*Kzx'*T-((Kxx'*m1+param.alpha*Kzx'*c1)/(m+param.alpha*c)*(m1'*Y+param.alpha*c1'*T)));
+A = (Kxx2+param.alpha*Kzx2+param.gamma*Kg2+param.beta*Kxx - ((Kxx'*m1+param.alpha*Kzx'*c1)/(m+param.alpha*c)*(m1'*Kxx+param.alpha*c1'*Kzx))+epsilon*I)\(Kxx'*Y+param.alpha*Kzx'*T-((Kxx'*m1+param.alpha*Kzx'*c1)/(m+param.alpha*c)*(m1'*Y+param.alpha*c1'*T)));
 b = 1/(m+param.alpha*c)*((Y'-A'*Kxx')*m1+param.alpha*(T'-A'*Kzx')*c1);
 
 test_outputs = Ktx*A+ones(t,1)*b';
