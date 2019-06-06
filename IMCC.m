@@ -1,6 +1,5 @@
 function [ Result ] = IMCC( train_data,train_target,test_data,test_target,param)
-%IMCC 此处显示有关此函数的摘要
-%   此处显示详细说明
+
  
     
 [m, n] = size(train_data);
